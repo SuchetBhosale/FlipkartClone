@@ -5,6 +5,10 @@
     font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /******************************** Nav Bar container*********************************/
 
 .nav-container {
@@ -35,18 +39,28 @@
     font-size: 17px;
 }
 
+nav div div:nth-child(3):hover{
+    background-color: rgb(25, 25, 131);
+}
+
+.login-box{
+    margin: 0% 2%,
+}
+
 .login-box,
 .seller-box,
 .cart-box {
     display: flex;
     align-items: center;
     gap: 10%;
+    cursor: pointer;
 }
 
 .search-box {
     display: flex;
     align-items: center;
     width: 45%;
+    cursor: pointer;
 }
 
 .search-input-box {
@@ -59,6 +73,15 @@
 .seller-box {
     width: 11%;
     gap: 8px;
+    cursor: pointer;
+}
+
+#more_vert{
+    cursor: pointer;
+}
+
+nav div div label{
+    cursor: pointer;
 }
 
 .search_icon {
@@ -187,11 +210,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 19px 21px;
 }
 
 .top-deals-images {
     grid-area: topDealImages;
-    background-color: orange;
 }
 
 .flex {
@@ -200,13 +223,22 @@
     padding: 30px 10px 20px 15px;
     gap: 20px;
     align-items: center;
+    margin: -38px 2px;
 }
 
 .top-deals-images img {
     width: 20%;
     height: 100%;
-    padding: 47px 27px 21px 12px;
+    padding: 34px 11px 21px 12px;
     border: 1px solid black;
+}
+
+#top-deal{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -.02px;
+    font-weight: 600;
+    font-family: inter_semi_bold,fallback-inter_semi_bold,Arial,sans-serif;
 }
 
 .top-deals-ads {
@@ -216,6 +248,11 @@
 .top-deals-ads img {
     height: 100%;
     width: 100%;
+}
+
+#top-deal-image{
+    width:15%;
+    margin-left: 90%;
 }
 
 /*****************Top Stories Section*******************/
@@ -312,4 +349,8 @@
 .last-footer-items img {
     padding: 26px;
     margin-left: -15px;
+}
+
+ ul li a:hover{
+    border-bottom: 1px solid white;
 }
